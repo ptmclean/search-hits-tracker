@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GHT.API.Features.SearchHits;
+using GHT.API.Features.SearchHits.SearchEngines;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,6 +39,7 @@ namespace GHT.API
 );
 
             services.AddScoped<ISearchHitsControllerService, SearchHitsControllerService>();
+            services.AddScoped<ISearchEngine, GoogleSearchEngine>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
