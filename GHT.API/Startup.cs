@@ -29,6 +29,7 @@ namespace GHT.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMemoryCache();
             services.AddCors(a =>
                 a.AddPolicy(CorsPolicyName,
                 cors => cors.WithOrigins(
@@ -40,6 +41,7 @@ namespace GHT.API
 
             services.AddScoped<ISearchHitsControllerService, SearchHitsControllerService>();
             services.AddScoped<ISearchEngine, GoogleSearchEngine>();
+            services.Decorate<ISearchEngine, SearchEngineCachingDecorator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -11,6 +11,7 @@ using System;
 
 namespace GHT.API.Tests
 {
+    [TestFixture]
     public class SearchHitsControllerServiceTests
     {
         [Test]
