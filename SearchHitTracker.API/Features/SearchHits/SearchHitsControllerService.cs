@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using GHT.API.Features.SearchHits.Models;
-using GHT.API.Features.SearchHits.SearchEngines;
+using SearchHitTracker.API.Features.SearchHits.Models;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines;
 
-namespace GHT.API.Features.SearchHits
+namespace SearchHitTracker.API.Features.SearchHits
 {
     public interface ISearchHitsControllerService
     {

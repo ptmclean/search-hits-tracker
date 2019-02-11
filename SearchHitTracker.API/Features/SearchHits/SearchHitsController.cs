@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using GHT.API.Features.SearchHits.Models;
+using SearchHitTracker.API.Features.SearchHits.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GHT.API.Features.SearchHits
+namespace SearchHitTracker.API.Features.SearchHits
 {
     [Route("api/[controller]")]
     [ApiController]

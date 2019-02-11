@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GHT.API.Features.SearchHits.Models
+namespace SearchHitTracker.API.Features.SearchHits.Models
 {
     public class SearchRankResponse
     {

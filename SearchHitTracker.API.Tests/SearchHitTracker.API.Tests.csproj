@@ -17,6 +17,6 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GHT.API\GHT.API.csproj" />
+    <ProjectReference Include="..\SearchHitTracker.API\SearchHitTracker.API.csproj" />
   </ItemGroup>
 </Project>

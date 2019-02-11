@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GHT.API.Features.SearchHits;
-using GHT.API.Features.SearchHits.SearchEngines;
+using SearchHitTracker.API.Features.SearchHits;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace GHT.API
+namespace SearchHitTracker.API
 {
     public class Startup
     {

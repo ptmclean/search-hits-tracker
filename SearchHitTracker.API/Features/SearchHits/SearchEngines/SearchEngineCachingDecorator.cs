@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using GHT.API.Features.SearchHits.SearchEngines.Models;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines.Models;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace GHT.API.Features.SearchHits.SearchEngines
+namespace SearchHitTracker.API.Features.SearchHits.SearchEngines
 {
     public class SearchEngineCachingDecorator : ISearchEngine
     {

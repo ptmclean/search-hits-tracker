@@ -1,6 +1,6 @@
 using System;
 
-namespace GHT.API.Features.SearchHits.SearchEngines.Models
+namespace SearchHitTracker.API.Features.SearchHits.SearchEngines.Models
 {
     public class SearchResult
     {

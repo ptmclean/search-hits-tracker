@@ -2,13 +2,13 @@ using System.Linq;
 using System.Collections.Generic;
 using FakeItEasy;
 using FluentAssertions;
-using GHT.API.Features.SearchHits.SearchEngines;
-using GHT.API.Features.SearchHits.SearchEngines.Models;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines.Models;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 
-namespace GHT.API.Tests
+namespace SearchHitTracker.API.Tests
 {
     [TestFixture]
     public class SearchEngineCacheDecoratorTests

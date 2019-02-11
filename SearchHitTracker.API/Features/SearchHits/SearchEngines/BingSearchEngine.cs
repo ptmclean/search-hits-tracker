@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using GHT.API.Features.SearchHits.SearchEngines.Models;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines.Models;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace GHT.API.Features.SearchHits.SearchEngines
+namespace SearchHitTracker.API.Features.SearchHits.SearchEngines
 {
     public class BingSearchEngine : ISearchEngine
     {

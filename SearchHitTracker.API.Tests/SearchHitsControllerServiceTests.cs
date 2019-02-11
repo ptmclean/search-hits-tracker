@@ -1,15 +1,15 @@
 using NUnit.Framework;
 using FakeItEasy;
-using GHT.API.Features.SearchHits.SearchEngines;
-using GHT.API.Features.SearchHits;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines;
+using SearchHitTracker.API.Features.SearchHits;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using GHT.API.Features.SearchHits.Models;
-using GHT.API.Features.SearchHits.SearchEngines.Models;
+using SearchHitTracker.API.Features.SearchHits.Models;
+using SearchHitTracker.API.Features.SearchHits.SearchEngines.Models;
 using System;
 
-namespace GHT.API.Tests
+namespace SearchHitTracker.API.Tests
 {
     [TestFixture]
     public class SearchHitsControllerServiceTests
