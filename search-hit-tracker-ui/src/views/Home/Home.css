@@ -9,6 +9,12 @@
   padding: var(--padding);
 }
 
+.inputWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .trackerForm label {
   align-items: center;
   background-color: var(--dark-grey);
@@ -16,7 +22,7 @@
   color: var(--white);
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--padding);
+  margin: var(--padding);
   min-width: 340px;
 }
 

@@ -35,15 +35,17 @@ const Home = () => {
     <div className={styles.homeContent}>
       Check how we are tracking with our search ranking by entering a search term and the URL that you want to rank. The tracker will let you know all the entries in the top 100 search results that contain the URL to test.
       <form className={styles.trackerForm}>
-        <label htmlFor="urlToTest">
-          <span className={styles.formLabel}>Site to Test</span>
-          <input name="urlToTest" type="text" value={urlToTest} placeholder="www.sympli.com.au" onChange={(e) => setUrlToTest(e.target.value)} required />
-        </label>
-        <label htmlFor="searchTerm">
-          <span className={styles.formLabel}>Search Term</span>
-          <input name="searchTerm" type="text" value={searchTerm} placeholder="e-settlement" onChange={(e) => setSearchTerm(e.target.value)} required />
-        </label>
-        <button type="button" ref={buttonRef} onClick={(e) => getSearchRankings(e)}>Check Rankings</button>
+        <div className={styles.inputWrapper}>
+          <label htmlFor="urlToTest">
+            <span className={styles.formLabel}>Site to Test</span>
+            <input name="urlToTest" type="text" value={urlToTest} placeholder="www.sympli.com.au" onChange={(e) => setUrlToTest(e.target.value)} required />
+          </label>
+          <label htmlFor="searchTerm">
+            <span className={styles.formLabel}>Search Term</span>
+            <input name="searchTerm" type="text" value={searchTerm} placeholder="e-settlement" onChange={(e) => setSearchTerm(e.target.value)} required />
+          </label>
+        </div>
+        <button type="submit" ref={buttonRef} onClick={(e) => getSearchRankings(e)}>Check Rankings</button>
         <div className={styles.error}>{formErrors}</div>
       </form>
       {searchResults ? searchResults.map((sr) => (
