@@ -1,0 +1,30 @@
+.header {
+  align-items: center;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  display: flex;
+  font-size: var(--heading);
+  height: 80px;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+.headerContent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--maxContentWidth);
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+.pageContent {
+  color: var(--dark-grey);
+  max-width: var(--maxContentWidth);
+  width: 100%;
+}

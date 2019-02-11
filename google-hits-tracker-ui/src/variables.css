@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --sympli-green: #18cdbc;
+  --dark-grey: #4c4c4c;
+  --light-grey: #ccc;
+  --white: #fff;
+  --red: red;
+
+  /* Font */
+  --font: Sympli, Arial, Helvetica, sans-serif;
+
+  /* Font sizes */
+  --title: 42px;
+  --heading: 32px;
+  --heading2: 24px;
+  --body: 18px;
+  --small: 16px;
+  --x-small: 11px;
+
+  /* Font weights */
+  --normal: 400;
+  --bold: 700;
+
+  /* Padding */
+  --padding-tiny: 3px;
+  --padding-small: 6px;
+  --padding: 10px;
+  --padding-large: 20px;
+
+  /* Border Radius */
+  --border-radius: 4px;
+
+  /* Widths */
+  --maxContentWidth: 1050px;
+}
+
+@custom-media --tablet (width > 480px);
+@custom-media --desktop (width > 900px);
+@custom-media --wide (width > 1320px);
+
+@custom-selector :--enter :hover:not(:disabled), :focus;

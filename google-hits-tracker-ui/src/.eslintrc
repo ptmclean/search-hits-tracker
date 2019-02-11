@@ -1,0 +1,45 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "arrow-parens": ["error", "always"],
+        "max-len": ["error", 250, 2],
+        "no-continue": "off",
+        "no-param-reassign": "off",
+        "import/no-unresolved": "off",
+        "no-restricted-syntax": "off",
+        "object-curly-newline": "off",
+        "react/jsx-filename-extension": "off",
+        "import/extensions": "off",
+        "react/sort-comp": ["error", {
+            "groups": {
+                "lifecycle": [
+                    "displayName",
+                    "propTypes",
+                    "contextTypes",
+                    "childContextTypes",
+                    "mixins",
+                    "statics",
+                    "defaultProps",
+                    "state",
+                    "instance-variables",
+                    "constructor",
+                    "getDefaultProps",
+                    "getInitialState",
+                    "getChildContext",
+                    "componentWillMount",
+                    "componentDidMount",
+                    "componentWillReceiveProps",
+                    "shouldComponentUpdate",
+                    "componentWillUpdate",
+                    "componentDidUpdate",
+                    "componentWillUnmount"
+                ]
+            }
+        }]
+    }
+}

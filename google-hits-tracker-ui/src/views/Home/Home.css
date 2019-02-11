@@ -1,0 +1,86 @@
+.homeContent {
+  padding: var(--padding);
+}
+
+.trackerForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: var(--padding);
+}
+
+.trackerForm label {
+  align-items: center;
+  background-color: var(--dark-grey);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--padding);
+  min-width: 340px;
+}
+
+.trackerForm input[type=text] {
+  border: solid 1px var(--dark-grey);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  font-size: var(--body);
+  padding: var(--padding);
+}
+
+.trackerForm input[type=text]::placeholder {
+  color: var(--light-grey);
+}
+
+.formLabel {
+  padding: 0 var(--padding);
+}
+
+.trackerForm button {
+  background-color: var(--sympli-green);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-family: inherit;
+  font-size: var(--body);
+  font-weight: var(--bold);
+  min-height: 43px;
+  outline: 0;
+  padding: 0 var(--padding);
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  text-transform: inherit;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s linear,
+    background-color 0.2s ease,
+    color 0.2s ease;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.trackerForm button:disabled {
+  background-color: var(--light-grey);
+}
+
+.trackerForm button:not(:disabled):--enter {
+  background-color: var(--dark-grey);
+}
+
+.error {
+  color: var(--red);
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+@media (--desktop) {
+  .trackerForm label {
+    margin: 0 var(--padding) 0 0;
+  }
+}

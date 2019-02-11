@@ -22,11 +22,21 @@ namespace GHT.API
         }
 
         public IConfiguration Configuration { get; }
+        private string CorsPolicyName => "CORS Policy";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddCors(a =>
+                a.AddPolicy(CorsPolicyName,
+                cors => cors.WithOrigins(
+                    "https://localhost:8080",
+                    "https://0.0.0.0:8080")
+                .AllowAnyMethod()
+                .AllowAnyHeader())
+);
+
             services.AddScoped<ISearchHitsControllerService, SearchHitsControllerService>();
         }
 
@@ -44,6 +54,7 @@ namespace GHT.API
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(CorsPolicyName);
             app.UseMvc();
         }
     }

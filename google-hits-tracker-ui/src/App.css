@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Sympli';
+  font-weight: var(--normal);
+  src: url('./public/fonts/sympliContent.woff2');
+}
+
+@font-face {
+  font-family: 'Sympli';
+  font-weight: var(--bold);
+  src: url('./public/fonts/sympliHeader.woff2');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--white);
+  font-family: var(--font);
+  font-size: var(--body);
+  font-weight: var(--normal);
+  line-height: 1.15;
+  margin: 0;
+}
+
+h2 {
+  color: var(--sympli-green);
+  font-size: var(--heading);
+  font-weight: var(--bold);
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+.searchResultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--padding);
+}
+
+.rankingHeader {
+  display: flex;
+  flex: 0 0 30%;
+  justify-content: center;
+}
+
+.titleHeader {
+  display: flex;
+  flex: 0 0 70%;
+  justify-content: center;
+}
+
+.searchResult {
+  display: flex;
+  flex: 100%;
+}
+
+.ranking {
+  align-items: center;
+  color: var(--sympli-green);
+  display: flex;
+  flex: 30%;
+  font-weight: var(--bold);
+  justify-content: center;
+}
+
+.title {
+  flex: 70%;
+}
