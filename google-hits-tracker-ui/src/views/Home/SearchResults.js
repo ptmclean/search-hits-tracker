@@ -4,7 +4,11 @@ import styles from './SearchResults.css';
 
 const SearchResults = ({ searchResults }) => {
   if (!searchResults || !searchResults.matchingResults.length > 0) {
-    return null;
+    return (
+      <div className={styles.searchResultsContainer}>
+        No Search results found!
+      </div>
+    );
   }
   return (
     <div className={styles.searchResultsContainer}>

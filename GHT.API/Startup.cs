@@ -41,6 +41,7 @@ namespace GHT.API
 
             services.AddScoped<ISearchHitsControllerService, SearchHitsControllerService>();
             services.AddScoped<ISearchEngine, GoogleSearchEngine>();
+            services.AddScoped<ISearchEngine, BingSearchEngine>();
             services.Decorate<ISearchEngine, SearchEngineCachingDecorator>();
         }
 
