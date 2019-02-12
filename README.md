@@ -6,11 +6,12 @@ dotnet restore ./SearchHitTracker.API
 dotnet run -p ./SearchHitTracker.API
 ```
 ```
-npm --prefix ./search-hit-tracker-ui i
-npm --prefix ./search-hit-tracker-ui start 
+cd search-hit-tracker-ui
+npm i
+npm start
 ```
 
-After running the second command there should be a website opened in your default browser.
+After running the second command there should be a website opened in your default browser. You need to accept the developer certificate to view the site.
 
 To run the tests...
 ```
